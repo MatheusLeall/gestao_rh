@@ -2,6 +2,9 @@
 
 {% block body %}
     <h3>Bem-vindo, {{ usuario.funcionario.nome }} </h3>
+    <a href=" {% url 'list_funcionarios' %} ">Gereciar Funcionários</a>
+    <a href=" {% url 'list_horaextra' %} ">Registros de Horas Extras</a>
+    <a href=" {% url 'list_departamentos' %} ">Gerenciar Departamentos</a>
     <br>
     {% if usuario.funcionario.empresa %}
         <a href=" {% url 'alter_empresa' usuario.funcionario.empresa.id %} ">Alterar Empresa</a>

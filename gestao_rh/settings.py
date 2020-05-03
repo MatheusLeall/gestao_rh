@@ -31,6 +31,7 @@ INSTALLED_APPS = [
     'apps.documentos',
     'apps.registro_hora_extra',
     'apps.core',
+    'bootstrapform',
 ]
 
 MIDDLEWARE = [
@@ -110,6 +111,8 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
+
+MEDIA_URL = '/documentos/'
 
 STATIC_URL = '/static/'
 

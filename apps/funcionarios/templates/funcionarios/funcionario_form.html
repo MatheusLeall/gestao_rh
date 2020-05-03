@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% load bootstrap %}
+
+{% block title %}
+    <title>Funcionário</title>
+{% endblock %}
+
+{% block body %}
+    <form method="POST">
+        {% csrf_token %}
+        {{ form|bootstrap }}
+        <button type="submit" class="btn btn-success">Salvar Alteração</button>
+    </form>
+    <a href="{% url 'create_documento' object.id %} " class="btn btn-secondary my-2">Adicionar Documento</a>
+    <hr>
+    <div>
+        {% for documentos in object.documento_set.all %}
+            <li><a href=" {{ documentos.arquivo.url }} "> {{ documentos }} </a></li>
+        {% empty %}
+            <li> Não existe nenhum documento associado a esse fucionário </li>
+        {% endfor %}
+    </div>
+{% endblock %}

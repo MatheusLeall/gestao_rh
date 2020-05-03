@@ -1,0 +1,39 @@
+Populando selects dinamicamente com AJAX, JSON e PHP
+
+https://www.devmedia.com.br/populando-selects-dinamicamente-com-ajax-json-e-php/27658
+
+
+W3.CSS Slideshow
+
+https://www.w3schools.com/w3css/w3css_slideshow.asp
+
+
+Selecionar uma opção em um <select> e carregar dados relacionados
+
+https://forum.imasters.com.br/topic/549757-selecionar-uma-op%C3%A7%C3%A3o-em-um-e-carregar-dados-relaciona/
+
+
+Exibir arquivo PDF no corpo da página HTML
+
+https://pt.stackoverflow.com/questions/47452/exibir-arquivo-pdf-no-corpo-da-p%C3%A1gina-html
+
+
+Pesquisa dinâmica com Ajax, Banco de Dados e PHP
+
+https://www.gigasystems.com.br/artigo/35/pesquisa-dinamica-com-ajax-banco-de-dados-e-php
+
+------------------------------------------- Vídeos para fazer filtro ------------------------------------------
+
+Advance Ajax Product Filters in PHP
+
+https://www.youtube.com/watch?v=H2ISgzBgcA0
+
+
+Como criar com select o pesquisar sem refresh as empresas no estado
+
+https://www.youtube.com/watch?v=NY-rKl1e35k
+
+
+Busca no MySql sem refresh - HTML5, PHP e JQUERY
+
+https://www.youtube.com/watch?v=i_cpAiE5KuE

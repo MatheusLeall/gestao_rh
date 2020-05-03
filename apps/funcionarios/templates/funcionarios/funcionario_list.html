@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    <title>Lista de Funcionários</title>
+{% endblock %}
+
+{% block body %}
+    <h4 class="h4">Funcionários</h4>
+    <ul>
+    {% for funcionario in object_list %}
+        <li> {{ funcionario }} 
+            <a href="{% url 'update_funcionario' funcionario.id %}" class="btn btn-success">Editar</a>
+            <a href="{% url 'delete_funcionario' funcionario.id %}" class="btn btn-danger ml-1">Excluir</a>
+        </li>
+    {% empty %}
+        <li>Ainda não existem funcionários cadastrados</li>
+    {% endfor %}
+    </ul>
+    <br>
+    <div>
+        <a href="{% url 'create_funcionario' %}" class="btn btn-primary">Adicionar Funcionário</a>
+    </div>
+{% endblock %}

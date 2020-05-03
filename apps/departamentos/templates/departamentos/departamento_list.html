@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    <title>Lista de Departamentos</title>
+{% endblock %}
+
+{% block body %}
+    <h4 class="h4">Departamento</h4>
+    <ul>
+    {% for departamento in object_list %}
+        <li class='my-2'> {{ departamento }} 
+            <a href=" {% url 'update_departamento' departamento.id %} " class="btn btn-success ml-1">Editar</a>
+            <a href=" {% url 'delete_departamento' departamento.id %} " class="btn btn-danger ml-1">Deletar</a>
+        </li>
+    {% empty %}
+        <li>Ainda não existem departamentos cadastrados</li>
+    {% endfor %}
+    </ul>
+    <br>
+    <div>
+        <a href="{% url 'create_departamento' %}" class="btn btn-primary">Adicionar Departamento</a>
+    </div>
+{% endblock %}

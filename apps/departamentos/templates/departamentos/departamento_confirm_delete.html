@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    <title>Apagar Departamento</title>
+{% endblock %}
+
+{% block body %}
+    <form method="POST">
+        {% csrf_token %}
+        <h5 class="h5">Tem certeza que quer deletar {{ obj }}</h5>
+        {{ form.as_p }}
+        <button type="submit" class="btn btn-danger">Confirmar</button>
+    </form>
+{% endblock %}

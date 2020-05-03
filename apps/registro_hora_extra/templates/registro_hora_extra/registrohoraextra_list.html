@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    <title>Registro de Hora Extra</title>
+{% endblock %}
+
+{% block body %}
+    <h4 class="h4">Registro</h4>
+    <ul>
+    {% for registro_he in object_list %}
+        <li> {{ registro_he }} 
+            <a href="{% url 'update_horaextra' registro_he.id %}" class="btn btn-success">Editar</a>
+            <a href="{% url 'delete_horaextra' registro_he.id %}" class="btn btn-danger ml-1">Excluir</a>
+        </li>
+    {% empty %}
+        <li>Ainda não existe hora extra registrada para este funcionário</li>
+    {% endfor %}
+    </ul>
+    <br>
+    <div>
+        <a href="" class="btn btn-primary">Registrar Horas Extras</a>
+    </div>
+{% endblock %}
