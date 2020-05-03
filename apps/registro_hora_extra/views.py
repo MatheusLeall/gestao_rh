@@ -11,9 +11,16 @@ class HoraExtraList(ListView):
         empresa_logada = self.request.user.funcionario.empresa
         return RegistroHoraExtra.objects.filter(funcionario__empresa=empresa_logada)
 
+
+class HoraExtraCreate(CreateView):
+    model = RegistroHoraExtra
+    fields = ['motivo', 'funcionario', 'horas']
+
+
 class HoraExtraUpdate(UpdateView):
     model = RegistroHoraExtra
     fields = ['motivo', 'funcionario', 'horas']
+
 
 class HoraExtraDelete(DeleteView):
     model = RegistroHoraExtra
